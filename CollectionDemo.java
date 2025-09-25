@@ -11,24 +11,25 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-class CollectionDemo{
-	public static void main(String[] args){
-			LinkedList<String> linkedList = new LinkedList<>();	
-		linkedList.add("name1");
-		linkedList.addFirst("start");
+class CollectionDemo {
+
+    public static void main(String[] args) {
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("name1");
+        linkedList.addFirst("start");
         linkedList.addLast("end");
         linkedList.remove("name1");
 
-        System.out.println(linkedList.indexOf("start"));   
-
+        System.out.println(linkedList.indexOf("start"));
 
         Set<String> set = new HashSet<>();
         set.add("name1");
         set.add("name2");
         set.add("name1");
 
-        for(String s : set) 
+        for (String s : set) {
             System.out.println(s);
+        }
 
         System.out.println("-----------------------------------------------------------------------------------");
 
@@ -38,21 +39,20 @@ class CollectionDemo{
         s.add("name3");
         s.add("name2");
 
-        for(String s1 : s)
+        for (String s1 : s) {
             System.out.println(s1);
-
+        }
 
         System.out.println("-----------------------------------------------------------------------------------");
-
 
         Set<String> tree = new TreeSet<>();
         tree.add("name2");
         tree.add("name1");
         tree.add("name3");
 
-        for(String s2: tree)
+        for (String s2 : tree) {
             System.out.println(s2);
-
+        }
 
         Map<Integer, String> map = new HashMap<>();
         // Adding key-value pairs
@@ -95,8 +95,6 @@ class CollectionDemo{
         map.remove(4);
         System.out.println("After removing key 4: " + map);
 
-
-
         // Create LinkedHashMap
         Map<Integer, String> lhm = new LinkedHashMap<>();
 
@@ -114,9 +112,7 @@ class CollectionDemo{
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
 
-
-
-         // TreeMap with natural ordering
+        // TreeMap with natural ordering
         TreeMap<Integer, String> tmap = new TreeMap<>();
 
         tmap.put(3, "C++");
@@ -138,17 +134,15 @@ class CollectionDemo{
         System.out.println("Higher Key(2): " + tmap.higherKey(2));
         System.out.println("Lower Key(3): " + tmap.lowerKey(3));
 
-        Queue<Integer> queue = new LinkedList(); 
+        Queue<Integer> queue = new LinkedList<>();
         queue.add(21);
         queue.add(14);
         System.out.println(queue.poll());
-
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.add(12);
         pq.add(54);
         pq.add(47);
         System.out.println(pq.poll()); //12
-
-	}	
+    }
 }

@@ -1,7 +1,7 @@
 
 import java.util.Optional;
 
-public class OptionalExamples {
+public class OptionalExamples1 {
 
     public static void main(String[] args) {
 

@@ -11,7 +11,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-class CollectionDemo{
+class CollectionDemo1{
 	public static void main(String[] args){
 			LinkedList<String> linkedList = new LinkedList<>();	
 		linkedList.add("name1");

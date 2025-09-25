@@ -1,6 +1,3 @@
-
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Optional;
 
 public class OptionalExamples {
@@ -90,8 +87,5 @@ public class OptionalExamples {
 // 18. toString()
         System.out.println("opt toString: " + opt.toString());
         System.out.println("emptyOpt toString: " + emptyOpt.toString());
-
-
-        Collections.sort(list);
     }
 }
